@@ -1,4 +1,5 @@
 //2X2 DISPLAY WITH ESP32 - DEMO DISPLAY EXAMPLE 
+
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7789.h> // Hardware-specific library for ST7789
 #include <SPI.h>
@@ -45,7 +46,7 @@ Adafruit_ST7789 tft4 = Adafruit_ST7789(TFT4_CS, TFT4_DC, TFT4_MOSI, TFT4_SCLK, T
 float p = 3.1415926;
 
 void setup(void) {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.print(F("Hello! 2x2 Display DEMO"));
   pinMode(BACKLIGHT, OUTPUT);
   digitalWrite(BACKLIGHT, HIGH);
